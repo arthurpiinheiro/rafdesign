@@ -47,3 +47,5 @@ wp-admin/
 node_modules/
 
 .idea/
+
+wp-content/themes/rafdesign/package-lock.json
