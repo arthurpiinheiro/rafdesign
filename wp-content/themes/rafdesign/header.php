@@ -32,7 +32,7 @@
 
 <?php $current_slug = add_query_arg(array(), $wp->request); ?>
 
-<header class="<?php echo(($current_slug == 'sobre-nos') ? 'menu-fixed' : '') ?>">
+<header class="<?php echo(($current_slug == 'sobre-nos') ? 'menu-about-us' : '') ?>">
     <nav class="container-main">
         <div class="flex justify-content-between">
 

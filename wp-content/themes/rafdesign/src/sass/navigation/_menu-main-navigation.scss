@@ -40,7 +40,7 @@ header {
               width: 4px;
               height: 4px;
               border-radius: 100%;
-              background: $color_menu_active;
+              background: $color__text-main;
               position: absolute;
               right: 13px;
               bottom: 13px;
@@ -55,7 +55,7 @@ header {
           &.current_page_item {
             a {
               font-family: Lato-Black, sans-serif;
-              color: $color_menu_active;
+              color: $color__text-main;
 
               &:after {
                 display: block;
@@ -67,8 +67,8 @@ header {
     }
   }
 
-  &.menu-fixed {
-    position: fixed;
+  &.menu-about-us {
+    position: absolute;
     width: 100%;
 
     nav {
@@ -80,21 +80,24 @@ header {
           li {
 
             a {
-              color: rgba(255, 255, 255, .4);
+              color: #fff;
+
+              //color: rgba(255, 255, 255, .4);
 
               &:after {
-                background: #fff;
+                background: $color__link;
               }
 
               &:hover {
-                opacity: 1;
-                color: #02e1fd;
+                //opacity: 1;
+                //color: #02e1fd;
               }
             }
 
             &.current_page_item {
               a {
-                color: #fff;
+                color: $color__link;
+                //color: #fff;
               }
             }
           }
@@ -188,9 +191,11 @@ header {
 
             &.current_page_item a {
               text-decoration: line-through;
+              color:$color_menu_active;
 
               &::after {
                 display: none;
+                background: $color_menu_active;
               }
             }
 
@@ -201,6 +206,11 @@ header {
 
       .menu-mobile {
         z-index: 99;
+
+        i {
+          position: relative;
+          top: 3px;
+        }
       }
     }
   }

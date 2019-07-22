@@ -101,12 +101,16 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
   input[type=submit] {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     border-radius: 4px;
     background: #f5f4f4;
+    border: 1px solid #cecccc;
   }
 
   .btn-submit {
+    padding: 40px 0 0 0;
+    flex-direction: column;
+
     i {
       display: none;
     }

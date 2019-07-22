@@ -6,6 +6,7 @@
   padding-bottom: 150px;
   background: url('/rafdesign/wp-content/themes/rafdesign/assets/img/about-us-intro.jpg') center no-repeat;
   background-size: cover;
+  background-position: 50% 0%;
   position: relative;
   //transition: .3s;
 
@@ -34,7 +35,7 @@
       font-size: 38px;
       color: white;
       line-height: 45px;
-      margin-bottom: 80px;
+      margin-bottom: 80px !important;
     }
   }
 
@@ -55,6 +56,28 @@
       opacity: .5;
     }
   }
+
+  @media screen and (max-width: 781px) {
+    padding-bottom: 0;
+    height: auto;
+
+    .about-text-intro {
+      padding-top: 200px;
+
+      p {
+        line-height: initial;
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+      }
+
+    }
+
+    .call-to-action {
+      margin-bottom: 50px;
+    }
+
+  }
+
 }
 
 .what-we-do {
@@ -100,6 +123,205 @@
       color: #999;
     }
   }
+
+  @media screen and (max-width: 781px) {
+    padding: 70px 20px;
+
+    .title-section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 70px;
+    }
+
+    .what-we-do-item {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.team {
+  padding: 200px 20px;
+
+  .title-section {
+    font-size: 37px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    h3 {
+      color: $color__text-main;
+      max-width: 1024px;
+      margin-bottom: 210px;
+    }
+  }
+
+  .subtitle-section {
+    color: $color__text-main;
+    opacity: .6;
+    text-transform: uppercase;
+    text-align: center;
+
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  .team-leaders {
+    & > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    margin-bottom: 250px;
+  }
+
+  .team-leader {
+
+    &-left {
+      & > div {
+        //justify-content: flex-start;
+      }
+
+      .team-leader-text {
+        padding-left: 100px;
+      }
+
+      .team-leader-img {
+        & > div:after {
+          left: -20%;
+        }
+      }
+    }
+
+    &-right {
+      & > div {
+        //justify-content: flex-end;
+      }
+
+      .team-leader-img {
+        & > div:after {
+          right: -20%;
+        }
+      }
+
+      .team-leader-text {
+        padding-right: 100px;
+      }
+    }
+  }
+
+  .team-leader-img {
+    & > div {
+      position: relative;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -15%;
+        height: 130%;
+        background: #02e1fd;
+        width: 100%;
+      }
+    }
+
+    img {
+      width: 250px;
+      position: relative;
+      z-index: 1;
+    }
+
+  }
+
+  .team-leader-text {
+    max-width: 520px;
+
+    h2 {
+      //color: #02e1fd;
+      font-family: Lato-Black, sans-serif;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-size: .8rem;
+      font-family: Lato-bold, sans-serif;
+      opacity: .4;
+    }
+
+    p {
+      color: #9e9e9e;
+      font-size: .9rem;
+      margin-bottom: 13px !important;
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 100px 20px;
+
+    .team-leader-right {
+
+      & > div {
+        & > div:nth-child(1) {
+          order: 2;
+        }
+        & > div:nth-child(2) {
+          order: 1;
+        }
+      }
+
+      .team-leader-text {
+        padding-right: 0;
+
+      }
+    }
+
+    .title-section {
+      h3 {
+        margin-bottom: 110px
+      }
+    }
+
+    .team-leaders {
+      margin-bottom: 130px;
+      text-align: center;
+
+      & > div {
+        flex-direction: column;
+      }
+
+      h3 {
+        margin-top: 30px;
+      }
+
+      .team-leader-img {
+        & > div {
+
+          &:after {
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: #02e1fd;
+            width: 100%;
+            border-radius: 100%;
+          }
+        }
+
+        img {
+          padding: 3px;
+          width: 230px;
+          border-radius: 100%;
+        }
+
+      }
+    }
+
+    .team-leader-left {
+      .team-leader-text {
+        padding-left: 0;
+      }
+    }
+  }
 }
 
 .clients {
@@ -125,5 +347,9 @@
     .client-logo-item {
       margin: 20px 40px;
     }
+  }
+
+  @media screen and (max-width: 781px) {
+    padding: 70px 20px;
   }
 }

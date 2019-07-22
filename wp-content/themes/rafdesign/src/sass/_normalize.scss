@@ -122,3 +122,25 @@ a {
 .so-panel {
   margin-bottom: 0 !important;
 }
+
+p {
+  margin-bottom: 0 !important;
+}
+
+.height-auto {
+  min-height: calc(100vh - 450px);
+}
+
+.padding {
+  &-t {
+    &-60 {
+      padding-top: 60px;
+    }
+  }
+
+  &-b {
+    &-40 {
+      padding-bottom: 40px;
+    }
+  }
+}

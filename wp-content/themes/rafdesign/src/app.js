@@ -36,7 +36,7 @@ const app = {
         },
         call_to_action: () => {
             $('.call-to-action').click(() => {
-                // $('body,html').animate({scrollTop: $('.what-we-to').offset().top }, 400);
+                $('body,html').animate({scrollTop: $('.what-we-do').offset().top}, 400);
             });
         }
     },
@@ -50,12 +50,14 @@ const app = {
                         var $obj = $(this);
 
                         $(window).scroll(function () {
-                            var yPos = Math.round(($(window).scrollTop() - 100) / 10);
 
-                            var bgpos = '50% ' + yPos + 'px';
+                            if ($('.what-we-do').length && ($('.what-we-do').offset().top > $(window).scrollTop())) {
+                                var yPos = Math.round(($(window).scrollTop()) / 9);
 
-                            $obj.css('background-position', bgpos);
+                                var bgpos = '50% ' + yPos + '%';
 
+                                $obj.css('background-position', bgpos);
+                            }
                         });
                     });
                 }
