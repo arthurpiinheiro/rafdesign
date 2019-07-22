@@ -36,7 +36,6 @@ const app = {
         },
         call_to_action: () => {
             $('.call-to-action').click(() => {
-                // console.log($('.what-we-to').offsetTop);
                 // $('body,html').animate({scrollTop: $('.what-we-to').offset().top }, 400);
             });
         }
