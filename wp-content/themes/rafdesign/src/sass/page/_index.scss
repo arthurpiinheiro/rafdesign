@@ -1,0 +1,64 @@
+.container-index {
+
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-between;
+
+  .intro {
+    margin-top: 80px;
+    max-width: 620px;
+
+    h1 {
+      font-size: 50px;
+      font-family: 'Lato-Black', sans-serif;
+    }
+
+    p {
+      font-family: 'Lato-Light', sans-serif;
+      font-size: 18px;
+      color: $color__text-light;
+    }
+  }
+
+  .social-media {
+    display: flex;
+    margin-top: auto;
+
+    a {
+      display: inline-block;
+      padding: 10px 15px;
+      color: $color__text-main;
+      font-size: 20px;
+
+      &:hover {
+        color: $color__link;
+      }
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+
+    .intro {
+      margin: 60px auto 0 auto;
+
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .social-media {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 510px) {
+    padding: 0;
+  }
+}

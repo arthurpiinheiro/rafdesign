@@ -1,0 +1,114 @@
+// FORM // ============================== //
+
+// INPUTS // ============================== //
+
+label {
+  text-transform: uppercase;
+  font-size: 13px;
+  position: relative;
+  top: 18px;
+  background: #fff;
+  z-index: 1;
+  left: 13px;
+  padding: 0 7px;
+}
+
+input[type=email], input[type=text], textarea {
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  color: lightgrey;
+  outline: none;
+  padding-left: 17px;
+  transition: .3s;
+
+  &:focus {
+    color: $color_menu_active;
+    border: 2px solid $color_menu_active;
+  }
+}
+
+textarea {
+  height: 80px;
+}
+
+input {
+  &[type=text],
+  &[type=email] {
+    height: 60px;
+  }
+
+  &[type=submit] {
+    background: none;
+    font-size: 18px;
+    font-family: Lato-Bold, sans-serif;
+    border: none;
+    cursor: pointer;
+    //margin-top: 40px;
+    outline: none;
+    transition: .3s;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}
+
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+  border: none;
+}
+
+.btn-submit {
+  display: flex;
+  align-items: center;
+  padding: 40px 0 0 20px;
+
+  @media screen and (min-width: 768px) {
+
+    input[type=submit] {
+      width: 115px;
+      height: 40px;
+      text-align: left;
+      padding-left: 10px;
+      z-index: 1;
+    }
+  }
+
+  .ajax-loader {
+    display: none;
+  }
+
+  i {
+    position: relative;
+    left: -60px;
+    font-size: .7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $color__link;
+    color: $color__link;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+  }
+
+}
+
+@media screen and(max-width: 768px) {
+
+  input[type=email], input[type=text], textarea {
+    width: 100%;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    background: #f5f4f4;
+  }
+
+  .btn-submit {
+    i {
+      display: none;
+    }
+  }
+}

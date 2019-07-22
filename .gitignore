@@ -9,7 +9,34 @@ wp-content/upgrade/
 wp-content/uploads/
 wp-content/mu-plugins/
 wp-content/wp-cache-config.php
-wp-content/plugins/hello.php
+wp-content/plugins/
+wp-content/themes/twentynineteen/
+wp-content/themes/twentyseventeen/
+wp-content/themes/twentysixteen/
+
+wp-includes/
+
+.DS_Store
+wp-content/.DS_Store
+wp-content/languages/
+wp-content/themes/.DS_Store
+
+index.php
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-config-sample.php
+wp-cron.php
+wp-links-opml.php
+wp-mail.php
+wp-load.php
+wp-login.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+
+wp-admin/
 
 /.htaccess
 /license.txt
@@ -17,3 +44,6 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+node_modules/
+
+.idea/

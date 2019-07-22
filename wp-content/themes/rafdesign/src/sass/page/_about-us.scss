@@ -1,0 +1,129 @@
+.about-us-intro {
+  width: 100%;
+  height: 768px;
+  display: flex;
+  align-items: flex-end !important;
+  padding-bottom: 150px;
+  background: url('/rafdesign/wp-content/themes/rafdesign/assets/img/about-us-intro.jpg') center no-repeat;
+  background-size: cover;
+  position: relative;
+  //transition: .3s;
+
+  &:after {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  & > div {
+    position: relative;
+    z-index: 2;
+  }
+
+  .about-text-intro {
+    z-index: 2;
+
+    p {
+      max-width: 880px;
+      font-size: 38px;
+      color: white;
+      line-height: 45px;
+      margin-bottom: 80px;
+    }
+  }
+
+  .call-to-action {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border-radius: 100%;
+    border: 2px solid white;
+    color: white;
+    transition: .3s;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}
+
+.what-we-do {
+  background: #222224;
+  padding: 200px 20px;
+
+  .title-section {
+    font-size: 37px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+
+    h3 {
+      max-width: 1024px;
+      margin-bottom: 150px;
+    }
+  }
+
+  .subtitle-section {
+    color: #fff;
+    opacity: .6;
+    text-transform: uppercase;
+    text-align: center;
+
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  .what-we-do-item {
+    color: #fff;
+    margin-bottom: 100px;
+
+    h3 {
+      font-size: 21px;
+      font-family: Lato-Bold, sans-serif;
+    }
+
+    p {
+      font-size: 18px;
+      font-family: Lato-Light, sans-serif;
+      color: #999;
+    }
+  }
+}
+
+.clients {
+  padding: 150px 20px;
+  background: #efefef;
+
+  .title-section {
+    text-align: center;
+    font-size: 33px;
+    color: #ccc;
+  }
+
+  .clients-logos {
+    margin-top: 50px;
+
+    & > .panel-grid-cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .client-logo-item {
+      margin: 20px 40px;
+    }
+  }
+}

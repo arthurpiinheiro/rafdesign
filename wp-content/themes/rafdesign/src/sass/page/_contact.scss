@@ -1,0 +1,48 @@
+.contact-title {
+  font-size: 48px;
+  color: $color__text-main;
+}
+
+.contact-subtitle {
+  margin-top: 140px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $color__text-light;
+
+  P {
+    margin-bottom: 0
+  }
+}
+
+span[role=alert] {
+  font-size: .8em !important;
+  position: relative;
+  top: 3px;
+}
+
+.wpcf7-form {
+  margin-bottom: 140px;
+}
+
+.page-contact {
+  background: url("/rafdesign/wp-content/themes/rafdesign/assets/img/contact-coffee.jpg") center no-repeat;
+  background-size: cover;
+}
+
+@media screen and(max-width: 768px) {
+  .page-contact {
+    background: #fff;
+  }
+
+  .wpcf7-form {
+    margin-bottom: 30px;
+  }
+
+  .contact-subtitle {
+    margin-top: 80px;
+  }
+
+  .contact-title {
+    font-size: 30px;
+  }
+}
