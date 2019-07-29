@@ -4,18 +4,18 @@
 
 @import "variables-site/color";
 
-@import "navigation/navigation";
+@import "animate";
 
 @import "site/post";
 @import "site/footer";
 @import "site/load";
 
-@import "page/index";
-@import "page/about-us";
-@import "page/contact";
-
-@import "animate";
+@import "navigation/navigation";
 
 @import "form/form";
 @import "form/input";
 
+@import "page/index";
+@import "page/about-us";
+@import "page/contact";
+@import "page/post";
